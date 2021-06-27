@@ -1,0 +1,39 @@
+text {
+  font-size: 25;
+  font-family: SevilleSharp-Bold;
+  fill: #ffffff;
+}
+
+.cycle-item text {
+  x: 50%;
+  y: 35%;
+  text-anchor: middle;
+}
+
+#hoursIcon {
+  fill: firebrick;
+  opacity: 1;
+}
+
+#minsIcon {
+  fill: dodgerblue;
+  opacity: 1;
+}
+
+#batteryIcon {
+  opacity: 1;
+}
+
+#steps {
+  fill: mediumturquoise;
+}
+
+#stepsIcon {
+  fill: mediumturquoise;
+  opacity: 1;
+}
+
+#heartIcon {
+  fill: fb-magenta;
+  opacity: 1;
+}

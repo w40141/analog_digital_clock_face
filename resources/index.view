@@ -1,0 +1,75 @@
+<svg id="page" viewport-fill="#000000">
+  <svg id="clockFace">
+    <image id="background" href="face.png" x="0" y="0" width="100%" height="100%"/>
+    
+    <g id="mins" pointer-events="visible" transform="translate(50%, 50%)">
+      <image id="minsIcon" href="mins.png" x="-8" y="0" width="5%" height="44%"/>
+    </g>
+
+    <g id="hours" pointer-events="visible" transform="translate(50%, 50%)">
+      <image id="hoursIcon" href="hours.png" x="-11" y="0" width="7%" height="47%"/>
+    </g>
+  
+    <g id="secs" pointer-events="visible" transform="translate(50%, 50%)">
+      <rect x="$-1" y="-130" width="2" height="160" fill="fb-yellow" />
+      <circle cx="$-1" cy="33" r="5" fill="fb-yellow" />
+      <circle cx="$-5" cy="33" r="3" fill="black" />
+    </g>
+  
+    <circle cx="50%" cy="50%" r="7" fill="gray" />
+  </svg>
+
+  <svg id="informations">
+    <svg id="batteryContainer">
+      <image id="batteryIcon" href="battery.png" x="41%" y="77%" width="22%" height="11%"/>
+      <text id="battery" x="50%" y="85%" text-anchor="middle">
+        100%
+      </text>
+    </svg>
+
+    <svg id="MonthDateContainer">
+      <text id="monthDate" x="12%" y="52%" text-anchor="start">
+        01/01
+      </text>
+    </svg>
+    
+    <svg id="dayContainer">
+      <text id="day" x="88%" y="52%" text-anchor="end">
+        Sun
+      </text>
+    </svg>
+
+    <svg id="container">
+      <rect id="background" class="application-fill" />
+      <use id="statsCyle" href="#cycleview">
+
+        <use href="#cycleview-item" class="cycle-item">
+          <text id="time">
+            00:00:00
+          </text>
+        </use>
+
+        <use href="#cycleview-item" class="cycle-item">
+          <image id="stepsIcon" href="feet.png" x="44%" y="18%" width="12%" height="10%"/>
+          <text id="steps">
+            10000
+          </text>
+        </use>
+
+        <use href="#cycleview-item" class="cycle-item">
+          <image id="heartIcon" href="heart.png" x="46%" y="20%" width="8%" height="7%"/>
+          <text id="heart">
+            100
+          </text>
+        </use>
+        
+        <use href="#cycleview-item" class="cycle-item">
+          <text id="nothing">
+          </text>
+        </use>
+        
+      </use>
+    </svg>
+
+  </svg>
+</svg>
